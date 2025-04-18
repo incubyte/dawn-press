@@ -74,6 +74,11 @@
     margin-bottom: 2rem;
   }
 
+  .app-image {
+    width: 100%;
+    max-width: 1200px;
+  }
+
   .cta-button {
     display: inline-block;
     background-color: var(--dawn-orange);
@@ -338,131 +343,8 @@
     </div>
   </section>
 
-  <!-- Browser Mockup -->
-  <div class="browser-mockup">
-    <div class="browser-bar">
-      <div class="browser-actions">
-        <div class="browser-circle circle-red"></div>
-        <div class="browser-circle circle-yellow"></div>
-        <div class="browser-circle circle-green"></div>
-      </div>
-      <div class="browser-address">https://dawn-daw.app/studio</div>
-    </div>
-
-    <!-- DAW Interface Mockup -->
-    <div class="daw-interface">
-      <div class="daw-interface-header">
-        <div class="daw-logo">
-          <svg width="30" height="30" viewBox="0 0 200 100">
-            <rect x="20" y="20" width="160" height="60" rx="8" fill="#F95A2B" opacity="0.2"/>
-            <path d="M30 50 Q40 30, 50 50 Q60 70, 70 50" stroke="#F95A2B" stroke-width="3" fill="none"/>
-          </svg>
-          <span>DAWn Studio</span>
-        </div>
-
-        <div class="daw-controls">
-          <button class="daw-button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="white">
-              <path d="M8 5v14l11-7z"/>
-            </svg>
-            Play
-          </button>
-          <button class="daw-button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="white">
-              <path d="M12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6zm0-2c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8z"/>
-              <circle cx="12" cy="12" r="5" fill="white"/>
-            </svg>
-            Record
-          </button>
-          <button class="daw-button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="white">
-              <path d="M6 6h12v12H6z"/>
-            </svg>
-            Stop
-          </button>
-          <button class="daw-button primary-button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="white">
-              <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
-            </svg>
-            Export
-          </button>
-        </div>
-
-        <div class="daw-time">
-          <span>00:00:00</span>
-          <span class="time-divider">/</span>
-          <span>03:24:16</span>
-        </div>
-      </div>
-
-      <div class="daw-timeline">
-        <div class="timeline-markers">
-          <div class="marker">0:00</div>
-          <div class="marker">0:30</div>
-          <div class="marker">1:00</div>
-          <div class="marker">1:30</div>
-          <div class="marker">2:00</div>
-          <div class="marker">2:30</div>
-          <div class="marker">3:00</div>
-        </div>
-        <div class="timeline-playhead"></div>
-      </div>
-
-      <div class="daw-tracks">
-        <div class="daw-track">
-          <div class="track-info">
-            <div class="track-name">Vocals</div>
-            <div class="track-controls">
-              <button class="track-btn">M</button>
-              <button class="track-btn">S</button>
-            </div>
-            <div class="track-fader">
-              <div class="fader-level" style="height: 60%"></div>
-            </div>
-          </div>
-          <div class="track-waveform vocal-wave"></div>
-        </div>
-        <div class="daw-track">
-          <div class="track-info">
-            <div class="track-name">Drums</div>
-            <div class="track-controls">
-              <button class="track-btn">M</button>
-              <button class="track-btn">S</button>
-            </div>
-            <div class="track-fader">
-              <div class="fader-level" style="height: 75%"></div>
-            </div>
-          </div>
-          <div class="track-waveform drum-wave"></div>
-        </div>
-        <div class="daw-track">
-          <div class="track-info">
-            <div class="track-name">Synth</div>
-            <div class="track-controls">
-              <button class="track-btn">M</button>
-              <button class="track-btn">S</button>
-            </div>
-            <div class="track-fader">
-              <div class="fader-level" style="height: 50%"></div>
-            </div>
-          </div>
-          <div class="track-waveform synth-wave"></div>
-        </div>
-        <div class="daw-track">
-          <div class="track-info">
-            <div class="track-name">Bass</div>
-            <div class="track-controls">
-              <button class="track-btn">M</button>
-              <button class="track-btn">S</button>
-            </div>
-            <div class="track-fader">
-              <div class="fader-level" style="height: 65%"></div>
-            </div>
-          </div>
-          <div class="track-waveform bass-wave"></div>
-        </div>
-      </div>
-    </div>
+  <div style="display: flex; justify-content: center;">
+    <img src="/dawn-app.png" alt="app-image" class="app-image"/>
   </div>
 
   <!-- Features Section -->
