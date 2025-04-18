@@ -249,9 +249,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(90deg, 
-      rgba(249, 90, 43, 0.8) 0%, 
-      rgba(249, 90, 43, 0.2) 20%, 
+    background: linear-gradient(90deg,
+      rgba(249, 90, 43, 0.8) 0%,
+      rgba(249, 90, 43, 0.2) 20%,
       rgba(249, 90, 43, 0.7) 40%,
       rgba(249, 90, 43, 0.3) 65%,
       rgba(249, 90, 43, 0.6) 80%,
@@ -260,9 +260,9 @@
   }
 
   .track-waveform:nth-child(odd)::after {
-    background: linear-gradient(90deg, 
-      rgba(249, 90, 43, 0.3) 0%, 
-      rgba(249, 90, 43, 0.7) 20%, 
+    background: linear-gradient(90deg,
+      rgba(249, 90, 43, 0.3) 0%,
+      rgba(249, 90, 43, 0.7) 20%,
       rgba(249, 90, 43, 0.2) 40%,
       rgba(249, 90, 43, 0.8) 65%,
       rgba(249, 90, 43, 0.3) 80%,
@@ -312,15 +312,15 @@
     h1 {
       font-size: 3rem;
     }
-    
+
     h2 {
       font-size: 2rem;
     }
-    
+
     .features-grid {
       grid-template-columns: 1fr;
     }
-    
+
     .browser-mockup {
       margin: 2rem auto;
     }
@@ -331,21 +331,7 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" class="dawn-logo">
-        <!-- DAW Waveform Graphic -->
-        <rect x="20" y="20" width="160" height="60" rx="8" fill="#1D2127"/>
-        
-        <!-- Sound waves -->
-        <path d="M30 50 Q40 30, 50 50 Q60 70, 70 50 Q80 30, 90 50" stroke="#F95A2B" stroke-width="3" fill="none"/>
-        <path d="M100 50 Q110 35, 120 50 Q130 65, 140 50 Q150 35, 160 50" stroke="#F95A2B" stroke-width="3" fill="none"/>
-        
-        <!-- D letter shape -->
-        <circle cx="45" cy="50" r="15" fill="#F95A2B"/>
-        <rect x="45" y="35" width="15" height="30" fill="#F95A2B"/>
-        
-        <!-- Text -->
-        <text x="100" y="90" font-family="'Inter Tight', sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#1D2127">DAWn</text>
-      </svg>
+      <img src="/dawn_logo.png" alt="logo" class="dawn-logo">
       <h1>Meet DAWn</h1>
       <p class="hero-tagline">Professional audio production in your browser. Simple, powerful, accessible.</p>
       <a href="#" class="cta-button">Get Started Free</a>
@@ -362,7 +348,7 @@
       </div>
       <div class="browser-address">https://dawn-daw.app/studio</div>
     </div>
-    
+
     <!-- DAW Interface Mockup -->
     <div class="daw-interface">
       <div class="daw-interface-header">
@@ -373,7 +359,7 @@
           </svg>
           <span>DAWn Studio</span>
         </div>
-        
+
         <div class="daw-controls">
           <button class="daw-button">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="white">
@@ -401,14 +387,14 @@
             Export
           </button>
         </div>
-        
+
         <div class="daw-time">
           <span>00:00:00</span>
           <span class="time-divider">/</span>
           <span>03:24:16</span>
         </div>
       </div>
-      
+
       <div class="daw-timeline">
         <div class="timeline-markers">
           <div class="marker">0:00</div>
@@ -421,7 +407,7 @@
         </div>
         <div class="timeline-playhead"></div>
       </div>
-      
+
       <div class="daw-tracks">
         <div class="daw-track">
           <div class="track-info">
@@ -483,7 +469,7 @@
   <section class="features">
     <h2>Powerful Features, Simple Interface</h2>
     <p>Everything you need to create professional audio, right in your browser.</p>
-    
+
     <div class="features-grid">
       <div class="feature-card">
         <div class="feature-icon">
@@ -494,7 +480,7 @@
         <h3>Multiple Tracks</h3>
         <p>Work with unlimited audio and MIDI tracks. Mix and combine different elements with ease.</p>
       </div>
-      
+
       <div class="feature-card">
         <div class="feature-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -504,7 +490,7 @@
         <h3>Gain & Mixing</h3>
         <p>Professional-grade mixing capabilities. Adjust levels, pan, and create the perfect balance.</p>
       </div>
-      
+
       <div class="feature-card">
         <div class="feature-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -514,7 +500,7 @@
         <h3>Audio Effects</h3>
         <p>Apply reverb, delay, compression, EQ and more. Shape your sound with professional audio effects.</p>
       </div>
-      
+
       <div class="feature-card">
         <div class="feature-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -524,7 +510,7 @@
         <h3>Trim & Edit</h3>
         <p>Precise editing tools for trimming, splitting, and arranging your audio with sample-level accuracy.</p>
       </div>
-      
+
       <div class="feature-card">
         <div class="feature-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -534,7 +520,7 @@
         <h3>Easy Export</h3>
         <p>Export your projects in multiple formats. Share your creations instantly or save for later.</p>
       </div>
-      
+
       <div class="feature-card">
         <div class="feature-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -551,24 +537,24 @@
   <section class="why-section">
     <div class="why-container">
       <h2>Why Choose DAWn?</h2>
-      
+
       <div class="why-points">
         <div class="why-point">
           <h3>Accessible Anywhere</h3>
           <p>No downloads or installations. Access your projects from any device with an internet connection.</p>
         </div>
-        
+
         <div class="why-point">
           <h3>Easy to Learn</h3>
           <p>Designed for beginners and professionals alike. Low learning curve without sacrificing power.</p>
         </div>
-        
+
         <div class="why-point">
           <h3>Perfect for Quick Projects</h3>
           <p>Ideal for sketching ideas, quick edits, or full productions without the heavy setup.</p>
         </div>
       </div>
-      
+
       <a href="#" class="cta-button">Try DAWn Today</a>
     </div>
   </section>
@@ -578,15 +564,15 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="100">
       <!-- DAW Waveform Graphic -->
       <rect x="20" y="20" width="160" height="60" rx="8" fill="#1D2127"/>
-      
+
       <!-- Sound waves -->
       <path d="M30 50 Q40 30, 50 50 Q60 70, 70 50 Q80 30, 90 50" stroke="#F95A2B" stroke-width="3" fill="none"/>
       <path d="M100 50 Q110 35, 120 50 Q130 65, 140 50 Q150 35, 160 50" stroke="#F95A2B" stroke-width="3" fill="none"/>
-      
+
       <!-- D letter shape -->
       <circle cx="45" cy="50" r="15" fill="#F95A2B"/>
       <rect x="45" y="35" width="15" height="30" fill="#F95A2B"/>
-      
+
       <!-- Text -->
       <text x="100" y="90" font-family="'Inter Tight', sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="white">DAWn</text>
     </svg>
