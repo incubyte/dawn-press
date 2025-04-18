@@ -331,7 +331,21 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
-      <img src="assets/dawn-logo.png" alt="DAWn Logo" class="dawn-logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" class="dawn-logo">
+        <!-- DAW Waveform Graphic -->
+        <rect x="20" y="20" width="160" height="60" rx="8" fill="#1D2127"/>
+        
+        <!-- Sound waves -->
+        <path d="M30 50 Q40 30, 50 50 Q60 70, 70 50 Q80 30, 90 50" stroke="#F95A2B" stroke-width="3" fill="none"/>
+        <path d="M100 50 Q110 35, 120 50 Q130 65, 140 50 Q150 35, 160 50" stroke="#F95A2B" stroke-width="3" fill="none"/>
+        
+        <!-- D letter shape -->
+        <circle cx="45" cy="50" r="15" fill="#F95A2B"/>
+        <rect x="45" y="35" width="15" height="30" fill="#F95A2B"/>
+        
+        <!-- Text -->
+        <text x="100" y="90" font-family="'Inter Tight', sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#1D2127">DAWn</text>
+      </svg>
       <h1>Meet DAWn</h1>
       <p class="hero-tagline">Professional audio production in your browser. Simple, powerful, accessible.</p>
       <a href="#" class="cta-button">Get Started Free</a>
@@ -351,29 +365,115 @@
     
     <!-- DAW Interface Mockup -->
     <div class="daw-interface">
-      <div class="daw-controls">
-        <button class="daw-button">Play</button>
-        <button class="daw-button">Record</button>
-        <button class="daw-button">Stop</button>
-        <button class="daw-button">Export</button>
+      <div class="daw-interface-header">
+        <div class="daw-logo">
+          <svg width="30" height="30" viewBox="0 0 200 100">
+            <rect x="20" y="20" width="160" height="60" rx="8" fill="#F95A2B" opacity="0.2"/>
+            <path d="M30 50 Q40 30, 50 50 Q60 70, 70 50" stroke="#F95A2B" stroke-width="3" fill="none"/>
+          </svg>
+          <span>DAWn Studio</span>
+        </div>
+        
+        <div class="daw-controls">
+          <button class="daw-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="white">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+            Play
+          </button>
+          <button class="daw-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="white">
+              <path d="M12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6zm0-2c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8z"/>
+              <circle cx="12" cy="12" r="5" fill="white"/>
+            </svg>
+            Record
+          </button>
+          <button class="daw-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="white">
+              <path d="M6 6h12v12H6z"/>
+            </svg>
+            Stop
+          </button>
+          <button class="daw-button primary-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="white">
+              <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+            </svg>
+            Export
+          </button>
+        </div>
+        
+        <div class="daw-time">
+          <span>00:00:00</span>
+          <span class="time-divider">/</span>
+          <span>03:24:16</span>
+        </div>
+      </div>
+      
+      <div class="daw-timeline">
+        <div class="timeline-markers">
+          <div class="marker">0:00</div>
+          <div class="marker">0:30</div>
+          <div class="marker">1:00</div>
+          <div class="marker">1:30</div>
+          <div class="marker">2:00</div>
+          <div class="marker">2:30</div>
+          <div class="marker">3:00</div>
+        </div>
+        <div class="timeline-playhead"></div>
       </div>
       
       <div class="daw-tracks">
         <div class="daw-track">
-          <div class="track-info">Vocals</div>
-          <div class="track-waveform"></div>
+          <div class="track-info">
+            <div class="track-name">Vocals</div>
+            <div class="track-controls">
+              <button class="track-btn">M</button>
+              <button class="track-btn">S</button>
+            </div>
+            <div class="track-fader">
+              <div class="fader-level" style="height: 60%"></div>
+            </div>
+          </div>
+          <div class="track-waveform vocal-wave"></div>
         </div>
         <div class="daw-track">
-          <div class="track-info">Drums</div>
-          <div class="track-waveform"></div>
+          <div class="track-info">
+            <div class="track-name">Drums</div>
+            <div class="track-controls">
+              <button class="track-btn">M</button>
+              <button class="track-btn">S</button>
+            </div>
+            <div class="track-fader">
+              <div class="fader-level" style="height: 75%"></div>
+            </div>
+          </div>
+          <div class="track-waveform drum-wave"></div>
         </div>
         <div class="daw-track">
-          <div class="track-info">Synth</div>
-          <div class="track-waveform"></div>
+          <div class="track-info">
+            <div class="track-name">Synth</div>
+            <div class="track-controls">
+              <button class="track-btn">M</button>
+              <button class="track-btn">S</button>
+            </div>
+            <div class="track-fader">
+              <div class="fader-level" style="height: 50%"></div>
+            </div>
+          </div>
+          <div class="track-waveform synth-wave"></div>
         </div>
         <div class="daw-track">
-          <div class="track-info">Bass</div>
-          <div class="track-waveform"></div>
+          <div class="track-info">
+            <div class="track-name">Bass</div>
+            <div class="track-controls">
+              <button class="track-btn">M</button>
+              <button class="track-btn">S</button>
+            </div>
+            <div class="track-fader">
+              <div class="fader-level" style="height: 65%"></div>
+            </div>
+          </div>
+          <div class="track-waveform bass-wave"></div>
         </div>
       </div>
     </div>
@@ -475,7 +575,21 @@
 
   <!-- Footer -->
   <footer>
-    <img src="assets/dawn-logo.png" alt="DAWn Logo" width="100">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="100">
+      <!-- DAW Waveform Graphic -->
+      <rect x="20" y="20" width="160" height="60" rx="8" fill="#1D2127"/>
+      
+      <!-- Sound waves -->
+      <path d="M30 50 Q40 30, 50 50 Q60 70, 70 50 Q80 30, 90 50" stroke="#F95A2B" stroke-width="3" fill="none"/>
+      <path d="M100 50 Q110 35, 120 50 Q130 65, 140 50 Q150 35, 160 50" stroke="#F95A2B" stroke-width="3" fill="none"/>
+      
+      <!-- D letter shape -->
+      <circle cx="45" cy="50" r="15" fill="#F95A2B"/>
+      <rect x="45" y="35" width="15" height="30" fill="#F95A2B"/>
+      
+      <!-- Text -->
+      <text x="100" y="90" font-family="'Inter Tight', sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="white">DAWn</text>
+    </svg>
     <p>© 2025 DAWn Audio. All rights reserved.</p>
   </footer>
 </main>
