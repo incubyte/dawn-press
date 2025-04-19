@@ -96,6 +96,17 @@
     transform: translateY(-3px);
     box-shadow: 0 4px 12px rgba(249, 90, 43, 0.3);
   }
+  
+  .docs-button {
+    background-color: white;
+    color: var(--dawn-orange);
+    border: 2px solid var(--dawn-orange);
+  }
+  
+  .docs-button:hover {
+    background-color: rgba(249, 90, 43, 0.05);
+    box-shadow: 0 4px 12px rgba(249, 90, 43, 0.15);
+  }
 
   .features {
     max-width: 1200px;
@@ -339,7 +350,10 @@
       <img src="/dawn_logo.png" alt="logo" class="dawn-logo">
       <h1>Meet DAWn</h1>
       <p class="hero-tagline">Professional audio production in your browser. Simple, powerful, accessible.</p>
-      <a href="#" class="cta-button">Get Started Free</a>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="https://cloudjam.netlify.app/" class="cta-button">Get Started Free</a>
+        <a href="https://dawn-docs.netlify.app/" class="cta-button docs-button">Documentation</a>
+      </div>
     </div>
   </section>
 
@@ -437,7 +451,7 @@
         </div>
       </div>
 
-      <a href="#" class="cta-button">Try DAWn Today</a>
+      <a href="https://cloudjam.netlify.app/" class="cta-button">Try DAWn Today</a>
     </div>
   </section>
 
@@ -459,6 +473,10 @@
       <text x="100" y="90" font-family="'Inter Tight', sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="white">DAWn</text>
     </svg>
     <p>© 2025 DAWn Audio. All rights reserved.</p>
+    <div style="margin-top: 1.5rem;">
+      <a href="https://cloudjam.netlify.app/" style="color: white; text-decoration: none; margin: 0 1rem;">Launch App</a>
+      <a href="https://dawn-docs.netlify.app/" style="color: white; text-decoration: none; margin: 0 1rem;">Documentation</a>
+    </div>
   </footer>
 </main>
 
